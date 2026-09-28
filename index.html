@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №2 — Варіант 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайту -->
+    <header id="main-header" title="Головний заголовок">
+        <h1>Проектування Web-документів: CSS</h1>
+        <p class="subtitle">Лабораторна робота №2 | Варіант 7</p>
+    </header>
+
+    <!-- Навігація -->
+    <nav class="nav-bar">
+        <a href="https://example.com" class="nav-link">Головна</a>
+        <a href="https://example.com/about" class="nav-link">Про автора</a>
+        <a href="#contact" class="nav-link">Контакти</a>
+    </nav>
+
+    <!-- Основна обгортка для створення вкладеності блоків -->
+    <div class="wrapper">
+        <main class="content-area">
+            
+            <article class="card">
+                <h2 class="card-title">Тема та мета роботи</h2>
+                <p class="description">
+                    Оформлення Web-сторінки за допомогою каскадних таблиць стилів (CSS). 
+                    Використання різних типів селекторів, правил позиціонування та візуалізації.
+                </p>
+                <p class="note">Зверніть увагу на оформлення першого рядка та псевдоелементи!</p>
+            </article>
+
+            <!-- Блок з формою для демонстрації псевдокласів -->
+            <section class="form-section">
+                <h3>Форма зворотного зв'язку</h3>
+                <form action="#" method="post">
+                    <div class="field-group">
+                        <label for="username">Ім'я користувача:</label>
+                        <input type="text" id="username" name="username" title="Введіть ім'я" placeholder="Ваше ім'я" required>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="subscribe">
+                            <input type="checkbox" id="subscribe" name="subscribe" checked> Підписатися на новини
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Надіслати</button>
+                </form>
+            </section>
+
+            <!-- Контейнер з обрізанням вмісту (clip/overflow) -->
+            <div class="clipped-box">
+                <div class="inner-clip">
+                    Цей блок використовує абсолютне позиціонування та функцію clip для кадрування вмісту.
+                </div>
+            </div>
+
+            <!-- Імітація CSS-таблиці -->
+            <div class="custom-table">
+                <div class="table-footer">
+                    <span>Нижній колонтитул CSS-таблиці (display: table-footer-group)</span>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Підвал сайту -->
+    <footer id="main-footer">
+        <p>&copy; 2026 Всі права захищено.</p>
+    </footer>
+
+</body>
+</html>
